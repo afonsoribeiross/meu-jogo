@@ -1,16 +1,34 @@
-# React + Vite
+# ☢️ Zona Morta — Setor 7
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jogo top-down de sobrevivência pós-apocalíptico feito em React + Vite.
 
-Currently, two official plugins are available:
+## 🎮 Como jogar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Use as **setas do teclado** para mover o personagem
+- Colete **🩹 kits médicos** para recuperar vida
+- Colete **⚡ baterias** para reduzir a radiação
+- Fuja dos **👾 inimigos** — eles te perseguem pelo mapa
+- Sobreviva o maior tempo possível
 
-## React Compiler
+## ⚙️ Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
 
-## Expanding the ESLint configuration
+## 🧠 O que foi implementado
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Mapa baseado em matriz 2D com colisão
+- Movimento por teclado com `useEffect`
+- Pathfinding BFS — inimigos encontram o jogador pelo caminho mais curto
+- Sistema de vida com decaimento por tempo
+- Itens coletáveis com efeitos
+- HUD com vida, tempo e contagem de itens
+- Tela de Game Over com reinício
+
+## 🚀 Rodar localmente
+
+```bash
+npm install
+npm run dev
+```
